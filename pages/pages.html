@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - W3Schools</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1d2024;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            padding: 2rem;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .left-content {
+            flex: 1;
+        }
+
+        .logo {
+            color: #00ff9d;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .heart {
+            color: #00ff9d;
+        }
+
+        .subtitle {
+            color: #a3a3a3;
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            list-style: none;
+        }
+
+        .features li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #a3a3a3;
+        }
+
+        .features li::before {
+            content: "✓";
+            color: #00ff9d;
+        }
+
+        .signup-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 400px;
+            color: #333;
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .login-link {
+            color: #666;
+        }
+
+        .login-link a {
+            color: #00ff9d;
+            text-decoration: none;
+        }
+
+        .social-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-button {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            background: none;
+            font-size: 0.9rem;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 1.5rem 0;
+            color: #666;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .signup-button {
+            width: 100%;
+            padding: 0.75rem;
+            background: #00ff9d;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+
+        .terms {
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+        }
+
+        .terms a {
+            color: #00ff9d;
+            text-decoration: none;
+        }
+
+        .newsletter {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <div class="logo">W3Schools</div>
+            <h1>Become a<br>W3Schooler <span class="heart">♥</span></h1>
+            <p class="subtitle">Free to use, easy to love</p>
+            <ul class="features">
+                <li>Track your progress</li>
+                <li>Set your goals</li>
+                <li>Get a personalized learning path</li>
+                <li>Test your skills</li>
+                <li>Practice coding in browser</li>
+                <li>Build and host a website</li>
+                <li>Teacher Toolbox</li>
+            </ul>
+        </div>
+        <div class="signup-card">
+            <div class="card-header">
+                <h2>Sign Up</h2>
+                <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+            </div>
+            <div class="social-buttons">
+                <button class="social-button">Google</button>
+                <button class="social-button">Facebook</button>
+                <button class="social-button">Github</button>
+                <button class="social-button">Feide</button>
+            </div>
+            <div class="divider">OR</div>
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last name" required>
+                </div>
+                <button type="submit" class="signup-button">Sign Up</button>
+                <p class="terms">
+                    By signing up you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                </p>
+                <label class="newsletter">
+                    <input type="checkbox">
+                    Email me with news and updates
+                </label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
